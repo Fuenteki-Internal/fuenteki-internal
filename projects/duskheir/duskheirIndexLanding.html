@@ -1,0 +1,312 @@
+<!-- /projects/duskheir/duskheirIndex.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>DuskHeir Documentation</title>
+
+  <!-- GLOBAL -->
+  <link rel="stylesheet" href="../../assets/css/global.css" />
+
+  <!-- PROJECT -->
+  <link rel="stylesheet" href="./duskheirIndex.css" />
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-header">
+      <h1>DuskHeir</h1>
+      <p>Technical Documentation</p>
+    </div>
+
+    <nav class="sidebar-nav">
+
+      <div class="nav-section">
+
+        <span class="nav-title">
+          OVERVIEW
+        </span>
+
+        <a href="#overview">
+          Project Overview
+        </a>
+
+        <a href="#vision">
+          Design Vision
+        </a>
+
+      </div>
+
+      <div class="nav-section">
+
+        <span class="nav-title">
+          ENGINEERING
+        </span>
+
+        <a href="#architecture">
+          Architecture
+        </a>
+
+        <a href="#gameplay-systems">
+          Gameplay Systems
+        </a>
+
+        <a href="#combat">
+          Combat
+        </a>
+
+        <a href="#state-machines">
+          State Machines
+        </a>
+
+      </div>
+
+      <div class="nav-section">
+
+        <span class="nav-title">
+          PRODUCTION
+        </span>
+
+        <a href="#pipelines">
+          Pipelines
+        </a>
+
+        <a href="#standards">
+          Standards
+        </a>
+
+      </div>
+
+    </nav>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-top">
+
+        <span class="status-badge active">
+          ACTIVE DEVELOPMENT
+        </span>
+
+        <span class="version-badge">
+          v1.1.1
+        </span>
+
+      </div>
+
+      <h1>
+        DuskHeir
+      </h1>
+
+      <p class="hero-description">
+        Combat-focused 3D action game developed in Godot 4.6.
+        The project revolves around a global combat-state mechanic
+        based on SUN, MOON and DUSK combat alignments.
+      </p>
+
+      <div class="hero-tags">
+
+        <span>Godot 4.6</span>
+        <span>GDScript</span>
+        <span>Forward+</span>
+        <span>Jolt Physics</span>
+        <span>Architecture Driven</span>
+
+      </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+    <section
+      class="content-section"
+      id="overview"
+    >
+
+      <div class="section-header">
+
+        <span class="section-kicker">
+          OVERVIEW
+        </span>
+
+        <h2>
+          Project Overview
+        </h2>
+
+      </div>
+
+      <div class="content-card">
+
+        <p>
+          DuskHeir is built around a single core mechanic:
+          dynamic state switching between SUN, MOON and DUSK.
+        </p>
+
+        <p>
+          Every major gameplay system reacts to the current state:
+        </p>
+
+        <ul>
+          <li>Combat interactions</li>
+          <li>Abilities</li>
+          <li>Enemy behaviors</li>
+          <li>Damage systems</li>
+          <li>Visual feedback</li>
+          <li>Resource management</li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <!-- STACK -->
+    <section
+      class="content-section"
+      id="architecture"
+    >
+
+      <div class="section-header">
+
+        <span class="section-kicker">
+          ENGINEERING
+        </span>
+
+        <h2>
+          Technical Stack
+        </h2>
+
+      </div>
+
+      <div class="stack-grid">
+
+        <div class="stack-card">
+
+          <h3>Engine</h3>
+          <p>Godot 4.6+</p>
+
+        </div>
+
+        <div class="stack-card">
+
+          <h3>Language</h3>
+          <p>Typed GDScript</p>
+
+        </div>
+
+        <div class="stack-card">
+
+          <h3>Renderer</h3>
+          <p>Forward+</p>
+
+        </div>
+
+        <div class="stack-card">
+
+          <h3>Physics</h3>
+          <p>Jolt Physics</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- DOCUMENTATION -->
+    <section class="content-section">
+
+      <div class="section-header">
+
+        <span class="section-kicker">
+          DOCUMENTATION
+        </span>
+
+        <h2>
+          Documentation Sections
+        </h2>
+
+      </div>
+
+      <div class="doc-grid">
+
+        <a
+          class="doc-card"
+          href="./architecture.html"
+        >
+
+          <span class="doc-category">
+            ENGINEERING
+          </span>
+
+          <h3>
+            Architecture & Principles
+          </h3>
+
+          <p>
+            FSMs, pooling, gameplay architecture,
+            composition standards and runtime systems.
+          </p>
+
+        </a>
+
+        <a
+          class="doc-card"
+          href="#"
+        >
+
+          <span class="doc-category">
+            GAMEPLAY
+          </span>
+
+          <h3>
+            Combat Systems
+          </h3>
+
+          <p>
+            Hitbox systems, combos,
+            combat states and ability interactions.
+          </p>
+
+        </a>
+
+        <a
+          class="doc-card"
+          href="#"
+        >
+
+          <span class="doc-category">
+            AI
+          </span>
+
+          <h3>
+            Enemy Architecture
+          </h3>
+
+          <p>
+            Enemy FSMs, steering systems,
+            debuffs and combat behaviors.
+          </p>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
