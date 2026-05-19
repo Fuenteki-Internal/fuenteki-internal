@@ -1,128 +1,224 @@
-<!-- /index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Fuenteki Studio — Documentation Hub</title>
 
-  <!-- IMPORTANT -->
-  <!-- Correct relative path to CSS -->
   <link rel="stylesheet" href="./assets/css/global.css" />
   <link rel="stylesheet" href="./assets/css/index.css" />
+
 </head>
 
 <body>
 
-<div class="layout">
+  <!-- NAVBAR -->
+  <header class="topbar">
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-
-    <div class="brand-block">
-      <h1>Fuenteki Studio</h1>
-      <p>Internal Documentation Hub</p>
+    <div class="topbar-brand">
+      Fuenteki Studio
     </div>
 
-    <nav>
+    <nav class="topbar-nav">
 
-      <h2>Repositories</h2>
-
-      <ul>
-        <li><a href="#active-projects">Active Projects</a></li>
-        <li><a href="#archived-projects">Archived Projects</a></li>
-        <li><a href="#shared-docs">Shared Documentation</a></li>
-      </ul>
-
-      <h2>Engineering</h2>
-
-      <ul>
-        <li><a href="#">Architecture Standards</a></li>
-        <li><a href="#">Production Pipelines</a></li>
-        <li><a href="#">Gameplay Conventions</a></li>
-      </ul>
+      <a href="#projects">Projects</a>
+      <a href="#resources">Resources</a>
+      <a href="#shared-docs">Documentation</a>
 
     </nav>
 
-  </aside>
+  </header>
 
-  <!-- MAIN -->
-  <main>
+  <!-- HERO -->
+  <section class="main-hero">
 
-    <!-- HERO -->
-    <header class="hero">
+    <div class="hero-content">
 
-      <h1>Documentation Repository</h1>
+      <span class="hero-tag">
+        INTERNAL ENGINEERING PORTAL
+      </span>
 
-      <p class="hero-description">
-        Centralized technical documentation for all studio projects,
-        gameplay systems, engineering architecture and internal pipelines.
+      <h1>
+        Documentation Repository
+      </h1>
+
+      <p>
+        Centralized technical documentation for gameplay systems,
+        architecture standards, production pipelines and internal tools.
       </p>
 
-      <div class="badges">
+      <div class="hero-badges">
+
         <span class="badge">GitHub Pages</span>
         <span class="badge">Static Frontend</span>
         <span class="badge">Engineering Wiki</span>
-        <span class="badge accent">Internal v1.0</span>
+        <span class="badge accent">Internal v1.1.2</span>
+
       </div>
 
-    </header>
+    </div>
 
-    <!-- ACTIVE PROJECTS -->
-    <section id="active-projects">
+  </section>
 
-      <div class="section-header">
-        <h2>Active Projects</h2>
-        <span>01 repositories</span>
+  <!-- ACTIVE PROJECTS -->
+  <section
+    class="section-container"
+    id="projects"
+  >
+
+    <div class="section-title">
+
+      <div>
+        <span class="section-kicker">
+          ACTIVE REPOSITORIES
+        </span>
+
+        <h2>
+          Current Projects
+        </h2>
       </div>
 
-      <div class="project-grid">
+      <span class="section-meta">
+        01 Active Project
+      </span>
 
-        <!-- DUSKHEIR -->
-        <article class="project-card">
+    </div>
 
-          <div class="project-top">
-            <span class="project-status active">ACTIVE</span>
-            <span class="project-version">v1.1.1</span>
-          </div>
+    <div class="project-grid">
 
-          <h3>DuskHeir</h3>
+      <!-- DUSKHEIR -->
+      <a
+        class="project-capsule"
+        href="./projects/duskheir/duskheirIndex.html"
+      >
 
-          <p>
-            Combat-focused 3D action game built in Godot 4.6.
-            Includes gameplay systems, combat architecture,
-            state machines, pooling and engine conventions.
-          </p>
+        <div class="project-top">
 
-          <div class="project-tags">
-            <span>Godot</span>
-            <span>GDScript</span>
-            <span>Gameplay</span>
-            <span>Architecture</span>
-          </div>
+          <span class="project-state active">
+            ACTIVE
+          </span>
 
-          <!-- IMPORTANT -->
-          <!-- Correct relative path -->
-          <a
-            class="project-button"
-            href="./projects/duskheir/duskheirIndex.html"
-          >
+          <span class="project-version">
+            v1.1.1
+          </span>
+
+        </div>
+
+        <h3>DuskHeir</h3>
+
+        <p>
+          3D combat-focused action game developed in Godot 4.6.
+          Includes gameplay systems, architecture standards,
+          state machines and combat pipelines.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Godot</span>
+          <span>GDScript</span>
+          <span>Gameplay</span>
+          <span>Architecture</span>
+
+        </div>
+
+        <div class="project-footer">
+
+          <span>
             Open Repository
-          </a>
+          </span>
 
-        </article>
+          <span class="arrow">
+            →
+          </span>
+
+        </div>
+
+      </a>
+
+      <!-- EMPTY SLOT -->
+      <div class="project-capsule placeholder">
+
+        <div class="placeholder-icon">
+          +
+        </div>
+
+        <h3>Future Repository</h3>
+
+        <p>
+          Reserved slot for upcoming project documentation.
+        </p>
 
       </div>
 
-    </section>
+    </div>
 
-  </main>
+  </section>
 
-</div>
+  <!-- RESOURCES -->
+  <section
+    class="section-container"
+    id="resources"
+  >
 
-<script src="./assets/js/index.js"></script>
+    <div class="section-title">
+
+      <div>
+
+        <span class="section-kicker">
+          ENGINEERING
+        </span>
+
+        <h2>
+          Shared Resources
+        </h2>
+
+      </div>
+
+    </div>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <h3>Architecture Standards</h3>
+        <p>
+          Shared engineering patterns and project conventions.
+        </p>
+      </div>
+
+      <div class="resource-card">
+        <h3>Production Pipelines</h3>
+        <p>
+          Workflow references for development and content production.
+        </p>
+      </div>
+
+      <div class="resource-card">
+        <h3>Gameplay Conventions</h3>
+        <p>
+          Shared gameplay architecture and implementation standards.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div>
+      Fuenteki Studio Internal Documentation
+    </div>
+
+    <div class="footer-right">
+      GitHub Pages Deployment
+    </div>
+
+  </footer>
+
+  <script src="./assets/js/index.js"></script>
 
 </body>
 </html>
