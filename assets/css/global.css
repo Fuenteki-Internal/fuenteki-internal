@@ -1,0 +1,100 @@
+:root {
+  --bg: #0f1419;
+  --bg-elev: #1a2028;
+  --bg-card: #151b22;
+  --bg-code: #11161d;
+
+  --fg: #d6deeb;
+  --fg-muted: #8da2b7;
+
+  --accent: #ffcb6b;
+  --accent-2: #82aaff;
+  --accent-3: #c792ea;
+
+  --border: #2a3540;
+
+  --ok: #7fdbca;
+  --warn: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  background: var(--bg-elev);
+  border-right: 1px solid var(--border);
+
+  padding: 24px 18px;
+}
+
+.sidebar h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.sidebar p {
+  color: var(--fg-muted);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.sidebar h2 {
+  margin-top: 32px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.sidebar li {
+  margin-bottom: 4px;
+}
+
+.sidebar a {
+  display: block;
+
+  padding: 8px 10px;
+
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: var(--fg-muted);
+
+  transition: 0.12s;
+}
+
+.sidebar a:hover {
+  background: rgba(130, 170, 255, 0.1);
+}
