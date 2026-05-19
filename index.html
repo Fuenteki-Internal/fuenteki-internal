@@ -1,25 +1,64 @@
-<!DOCTYPE html>
-      </ul>
+<!-- /index.html -->
 
-      <h2>Resources</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fuenteki Studio — Documentation Hub</title>
+
+  <!-- IMPORTANT -->
+  <!-- Correct relative path to CSS -->
+  <link rel="stylesheet" href="./assets/css/global.css" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="brand-block">
+      <h1>Fuenteki Studio</h1>
+      <p>Internal Documentation Hub</p>
+    </div>
+
+    <nav>
+
+      <h2>Repositories</h2>
 
       <ul>
-        <li><a href="#">Engineering Standards</a></li>
-        <li><a href="#">Architecture Guides</a></li>
-        <li><a href="#">Art Pipelines</a></li>
+        <li><a href="#active-projects">Active Projects</a></li>
+        <li><a href="#archived-projects">Archived Projects</a></li>
+        <li><a href="#shared-docs">Shared Documentation</a></li>
       </ul>
+
+      <h2>Engineering</h2>
+
+      <ul>
+        <li><a href="#">Architecture Standards</a></li>
+        <li><a href="#">Production Pipelines</a></li>
+        <li><a href="#">Gameplay Conventions</a></li>
+      </ul>
+
     </nav>
 
   </aside>
 
+  <!-- MAIN -->
   <main>
 
+    <!-- HERO -->
     <header class="hero">
+
       <h1>Documentation Repository</h1>
 
       <p class="hero-description">
         Centralized technical documentation for all studio projects,
-        systems, architecture references and production pipelines.
+        gameplay systems, engineering architecture and internal pipelines.
       </p>
 
       <div class="badges">
@@ -28,17 +67,20 @@
         <span class="badge">Engineering Wiki</span>
         <span class="badge accent">Internal v1.0</span>
       </div>
+
     </header>
 
+    <!-- ACTIVE PROJECTS -->
     <section id="active-projects">
 
       <div class="section-header">
         <h2>Active Projects</h2>
-        <span>03 repositories</span>
+        <span>01 repositories</span>
       </div>
 
       <div class="project-grid">
 
+        <!-- DUSKHEIR -->
         <article class="project-card">
 
           <div class="project-top">
@@ -50,8 +92,8 @@
 
           <p>
             Combat-focused 3D action game built in Godot 4.6.
-            Includes architecture standards, gameplay systems,
-            FSM documentation and combat pipelines.
+            Includes gameplay systems, combat architecture,
+            state machines, pooling and engine conventions.
           </p>
 
           <div class="project-tags">
@@ -61,17 +103,15 @@
             <span>Architecture</span>
           </div>
 
-          <a class="project-button" href="projects/duskheir/index.html">
+          <!-- IMPORTANT -->
+          <!-- Correct relative path -->
+          <a
+            class="project-button"
+            href="./projects/duskheir/duskheirIndex.html"
+          >
             Open Repository
           </a>
 
-        </article>
-
-        <article class="project-card placeholder">
-          <div class="placeholder-content">
-            <span>+</span>
-            <p>Future Project</p>
-          </div>
         </article>
 
       </div>
@@ -82,6 +122,7 @@
 
 </div>
 
-<script src="assets/js/index.js"></script>
+<script src="./assets/js/index.js"></script>
+
 </body>
 </html>
